@@ -1,7 +1,7 @@
 class ToDo {
   String? name;
   String? id;
-  bool? status = false;
+  bool? status = true;
 
   ToDo ({this.name, this.id,  this.status});
 }
