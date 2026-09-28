@@ -1,16 +1,18 @@
-# flutter_application_1
+# desafio: Flutter training app
 
-A new Flutter project.
+A small Flutter app built to practice UI, local state and REST integration. The home screen leads to three features:
 
-## Getting Started
+- **To-do list:** add tasks, block duplicates with a dialog, and mark tasks as done.
+- **GitHub profile lookup:** calls `GET https://api.github.com/users/{user}` and shows the avatar, login, name and bio, with loading and error feedback.
+- **Star Wars browser:** lists characters from [SWAPI](https://swapi.dev) with `FutureBuilder`, filters them by name, and opens a detail page (height, mass, birth year).
 
-This project is a starting point for a Flutter application.
+**Stack:** Flutter · Dart · `http` · JSON models · API providers in `lib/network/`
 
-A few resources to get you started if this is your first Flutter project:
+## Run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+flutter pub get
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Built in 2022 as a Flutter coding challenge.
